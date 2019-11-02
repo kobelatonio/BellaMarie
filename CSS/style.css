@@ -215,6 +215,12 @@ section#testimonials {
     text-align: center;
 }
 
+section.map {
+    background: #d8e3db;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
 /***** DIVS *****/
 
 div.box, div.box-contact  {
@@ -594,7 +600,7 @@ div.right-about {
 .location .info {
     text-align: left;
     position: absolute;
-    
+    bottom: 80px;
 }
 
 /***** TEXTS *****/
@@ -796,6 +802,18 @@ section#location a:hover {
     color: #b29b87;
 }
 
+.info h2 {
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.info h3 {
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 /***** FORMS *****/
 
 main.contact fieldset {
@@ -985,4 +1003,21 @@ div.right-best {
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+/***** MAPS *****/
+
+.mapouter {
+    text-align: center;
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 10px 10px rgb(212, 203, 208);
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 500px;
+    width: 800px;
 }
