@@ -92,16 +92,13 @@ footer img {
 }
 
 #menu img.leaf {
-    width: 90px;
-    position: absolute;
-    left: 36%;
+    width: 340px;
+    margin: 20px auto 30px;
 }
 
 #menu img.leaf2 {
-    width: 65px;
-    display: inline-block;
-    float: left;
-    margin-top: 10px;
+    width: 80%;
+    margin: 20px 10% 35px;
 }
 
 .box-story img{
@@ -117,10 +114,6 @@ footer img {
     width: 100%;
 }
 
-.right-about img {
-    margin-top: -30px;
-}
-
 img.best {
     width: 90px;
     margin-top: 60px;
@@ -128,10 +121,9 @@ img.best {
 }
 
 img.leaf-about {
-    width: 70px;
-    position: relative;
-    top: -70px;
-    right: -180px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 img.locator {
@@ -202,7 +194,8 @@ section#location {
     height: 1200px;
     background-color: #f4d9eb;
     background-image: url('../IMG/home/DSC_0561.png');
-    background-position: 42% 50%;
+    background-position: center;
+    background-position: center;
     background-size: 800px;
     background-repeat: no-repeat;
     text-align: center;
@@ -274,6 +267,11 @@ div.left {
 #menu div.container {
     position: relative;
     margin-bottom: 33px;
+}
+
+#menu div.menu-title {
+    text-align: center;
+    width: 100%;
 }
 
 #menu div.text {
@@ -605,17 +603,6 @@ div.right-about {
 
 /***** TEXTS *****/
 
-#menu h1 {
-    font-size: 23px;
-    letter-spacing: 1px;
-    font-style: italic;
-    font-weight: 700;
-    padding: 20px 0 60px;
-    z-index: 10;
-    position: relative;
-    line-height: 30px;
-}
-
 #menu h2 {
     position: absolute;
     top: 50%;
@@ -626,15 +613,6 @@ div.right-about {
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 25px;
-}
-
-#menu h3 {
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin: 10px 20px 40px 40px;
-    display: inline;
-    float: left;
 }
 
 h1.title {
@@ -706,15 +684,6 @@ main.contact p {
     margin-top: 10px;
     padding-right: 20px;
     line-height: 25px;
-}
-
-.right-about h3 {
-    padding: 30px 15px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-style: italic;
-    font-weight: 600;
-    margin-left: -50px;
 }
 
 .container-locator h2 {
@@ -1057,17 +1026,6 @@ div.right-best {
     div.box-story{
         width: 1000px;
     }
-    #menu h3 {
-        font-size: 23px;
-        margin: 10px 20px 40px 60px;
-        line-height: 37px;
-    }
-    #menu img.leaf2 {
-        width: 75px;
-        display: inline-block;
-        float: left;
-        margin-top: 15px;
-    }
 }
 
 /* 
@@ -1088,12 +1046,12 @@ div.right-best {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     header.home {
-        height: 500px;
+        height: 700px;
     }
 
     header img.white {
-        height: 79px;
-        margin: 150px auto 0;
+        height: 89px;
+        margin: 210px auto 0;
     }
 
     div.box, div.container-about {
@@ -1135,7 +1093,12 @@ div.right-best {
     }
 
     #menu div.text {
-        width: 200%;
+        width: 100%;
+    }
+
+    #menu img.leaf2 {
+        width: 90%;
+        margin: 20px 5% 35px;
     }
 
     div.container-about{
