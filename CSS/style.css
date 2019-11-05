@@ -53,7 +53,10 @@ header.home nav li, header.others nav li, footer nav li {
 
 header.home nav li {
     border-right: 1px solid rgba(255,255,255,0.6);
+}
 
+header.home nav li:hover {
+    border-right: 1px solid rgba(255,255,255,0.6);
 }
 
 header.others nav li, footer nav li {
