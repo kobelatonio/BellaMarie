@@ -171,7 +171,7 @@ section {
 
 section#menu {
     background: #f4d9eb;
-    height: 2100px;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -224,7 +224,7 @@ section.map {
 /***** DIVS *****/
 
 div.box, div.box-contact  {
-    width: 1000px;
+    width: 980px;
     margin: 0 auto;
 }
 
@@ -244,14 +244,14 @@ div.container-about{
 }
 
 div.container-locator {
-    width: 1100px;
+    width: 980px;
     margin: 0 auto;
     text-align: left;
     padding-top: 5px;
 }
 
 div.container-socmed {
-    width: 1100px;
+    width: 980px;
     margin: 0 auto;
 }
 
@@ -920,13 +920,13 @@ section#location h1 {
 }
 
 ::placeholder {
- color: #bcbcbc;
+    color: #bcbcbc;
 }
 :-ms-input-placeholder {
- color: #bcbcbc;
+    color: #bcbcbc;
 }
 ::-ms-input-placeholder {
- color: #bcbcbc;
+    color: #bcbcbc;
 }
 
 /***** SLIDESHOW *****/
@@ -1020,4 +1020,157 @@ div.right-best {
     background: none!important;
     height: 500px;
     width: 800px;
+}
+
+/***** MEDIA QUERIES *****/
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1381px) {
+    div.box, div.box-contact  {
+        width: 1200px;
+    }
+
+    div.box-menu{
+        width: 1000px;
+    }
+
+    div.box-location {
+        width: 1100px;
+    }
+
+    div.container-about{
+        width: 1150px;
+    }
+
+    div.container-locator {
+        width: 1300px;
+    }
+
+    div.container-socmed {
+        width: 1300px;
+    }
+
+    div.box-story{
+        width: 1000px;
+    }
+    #menu h3 {
+        font-size: 23px;
+        margin: 10px 20px 40px 60px;
+        line-height: 37px;
+    }
+    #menu img.leaf2 {
+        width: 75px;
+        display: inline-block;
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1380px) {
+
+
+
+}
+
+/* 
+##Device = Tablets, Ipads
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header.home {
+        height: 500px;
+    }
+
+    header img.white {
+        height: 79px;
+        margin: 150px auto 0;
+    }
+
+    div.box, div.container-about {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    #menu div.one, #menu div.two, #menu div.three, #menu div.four, #menu div.five {
+        width: 100%;
+        padding-top: 60%;
+        margin-left: 0;
+    }
+
+    #menu div.one {
+        background-position: top;
+    }
+
+    #menu div.five {
+        background-position: 50% 75%;
+    }
+
+    #menu div.three {
+        background-position: 50% 70%;
+    }
+
+    #menu div.two, #menu div.six {
+        background-position: bottom;
+    }
+
+    #menu div.seven {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #menu div.six {
+        width: 100%;
+        padding-top: 70%;
+        margin-left: 0;
+    }
+
+    #menu div.text {
+        width: 200%;
+    }
+
+    div.container-about{
+        width: 100%;
+    }
+
+    div.container-socmed {
+        width: 100%;
+    }
+    div.container-locator {
+        width: 100%;
+        padding-left: 2%;
+    }
+
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+
 }
