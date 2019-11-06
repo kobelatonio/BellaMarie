@@ -333,6 +333,10 @@ div.seven {
 	margin-left: 10%;
 }
 
+div.eight {
+	display: none;
+}
+
 div.menu-button {
 	background: none;
 	border: 2px solid #333;
@@ -986,23 +990,27 @@ div.right-best {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #333;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
+.prev {
+  left: -60px;
+}
+
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: -60px;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  color: white;
 }
 
 /***** MAPS *****/
@@ -1032,6 +1040,21 @@ div.right-best {
 @media (min-width: 1381px) {
 	div.box, div.box-contact  {
 		width: 1200px;
+	}
+
+	.slideshow-container {
+    	max-width: 930px;
+	}
+
+	.right-best h2 {
+    	font-size: 19px;
+    	padding: 0 30px;
+	}
+
+	img.best {
+    	width: 110px;
+    	margin-top: 60px;
+    	margin-bottom: 0px;
 	}
 
 	div.box-menu{
@@ -1188,7 +1211,11 @@ div.right-best {
 	}
 
 	section#location {
-		background-size: 800px;
+		background-size: 750px;
+	}
+
+	.slideshow-container {
+    	max-width: 650px;
 	}
 }
 
@@ -1198,9 +1225,41 @@ div.right-best {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+	div.seven {
+		display: none;
+	}
 
+	div.eight {
+		display: block;
+		width: 90%;
+		margin-left: 10%;
+	}
 
+	.slideshow-container {
+    	max-width: 100%;
+	}
 
+	div.left-best {
+    	float: left;
+    	margin-bottom: -30px;
+  		width: 300px;
+	  	margin: 0 auto;
+	  	overflow: hidden;
+	  	position: relative;
+	  	height: 200px;
+	}
+
+	div.left-best img {
+	  	left: 50%;
+	  	margin-left: -200px;
+	  	position: absolute;
+	}
+
+	div.dots, div.right-best {
+    	width: 100%;
+    	float: left;
+    	margin-bottom: 30px;
+	}
 }
 
 /* 
