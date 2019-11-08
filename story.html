@@ -2,23 +2,39 @@
 <html>
     <head>
         <title>Bella Marie | Menu</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="others story">
-            <nav>
-                <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="story.html">our story</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="location.html">location</a></li>
-                    <li id="no-border"><a href="contact.html">contact us</a></li>
+        <header class="story others">
+            <nav class="navbar" id="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <h1 class="fas fa-bars">&#9776;</h1>
+                </span>
+                <a href="#" class="logo"><img src="IMG/logo-white.png"></a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="home.html" class="nav-links">home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html" class="nav-links">menu</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links">our story</a>
+                    </li>
+                    <li>
+                        <a href="location.html" class="nav-links">location</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-links">contact us</a>
+                    </li>
                 </ul>
-                <img src="IMG/logo-black.png" class="black">
             </nav>
         </header>
         <main class="story">
+            <img src="IMG/logo-black.png" class="black">
             <h1 class="title">our story</h1>
             <div class="box-story">
                 <img src="IMG/story/56942686_130123431486571_3823025257194456952_n.jpg">
@@ -30,17 +46,26 @@
             </div>
         </main>
         <footer>
-            <img src="IMG/logo-black.png">
-            <nav>
-                <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="story.html">our story</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="location.html">location</a></li>
-                    <li id="no-border"><a href="contact.html">contact us</a></li>
-                </ul>
-            </nav>
-            <h1>Copyright © 2019 Bella Marie Cafe. All Rights Reserved.</h1>
+            <h1>Copyright © 2019 Bella Marie Cafe | All Rights Reserved.</h1>
         </footer>
+        <script>
+
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            navBarToggle.addEventListener('click', function () {
+                mainNav.classList.toggle('active2');
+            });
+
+            window.onscroll = () => {
+                const nav = document.querySelector('#navbar');
+                if(this.scrollY <= 10) {
+                    nav.className = 'navbar';
+                } else {
+                    nav.className = 'navbar scroll-story';
+                }
+            };
+
+        </script>
     </body>
 </html>

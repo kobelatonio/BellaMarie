@@ -21,7 +21,7 @@ header.home {
 
 header.others {
     width: 100%;
-    height: 230px;
+    position: relative;
     text-align: center;
 }
 
@@ -43,14 +43,21 @@ header.location {
 
 /***** NAVIGATION BAR *****/
 
-.navbar {
+.navbar, .navbar-location {
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0);
     padding-bottom: 10px;
     z-index: 100;
     position: fixed;
     width: 100%;
     transition: background-color 0.4s ease;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-location {
+    background-color: rgba(195, 219, 202, 0);
 }
 
 .main-nav {
@@ -103,6 +110,18 @@ nav.scroll {
     background-color: rgba(209, 186, 202, 1);
 }
 
+nav.scroll-menu {
+    background-color: rgba(180, 191, 161, 1);
+}
+
+nav.scroll-story {
+    background-color: rgba(222, 202, 151, 1);
+}
+
+nav.scroll-location {
+    background-color: rgba(195, 219, 202, 1);
+}
+
 h1.fas {
     font-weight: 700;
     color: white;
@@ -122,9 +141,9 @@ header img.white {
     margin-right: auto; 
 }
 
-header img.black{
-    height: 70px;
-    margin: 30px auto 0;
+img.black {
+    height: 90px;
+    margin: 120px auto 0;
 }
 
 footer img {
@@ -192,7 +211,7 @@ main.contact img.leaf {
     top: 70px;
 }
 
-main.location img {
+main.location img.content {
     width: 100%;
 }
 
@@ -666,14 +685,15 @@ h1.title {
     font-size: 30px;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 footer h1 {
-    padding: 10px 0 40px;
-    font-size: 14px;
-    font-weight: 300;
+    padding: 30px 0 30px;
+    font-size: 13px;
     color: #677c48;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 0px;
 }
 
 .box-story h2 {
@@ -825,6 +845,10 @@ section#location a:hover {
     letter-spacing: 1px;
     font-size: 15px;
     font-weight: 700;
+}
+
+.location h4.hide {
+    display: none;
 }
 
 /***** FORMS *****/
@@ -1126,7 +1150,7 @@ div.right-best {
         background-size: 1000px;
     }
 
-    .navbar {
+    .navbar, .navbar-location {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1169,7 +1193,7 @@ div.right-best {
 */
 
 @media (min-width: 1025px) and (max-width: 1380px) {
-    .navbar {
+    .navbar, .navbar-location {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1373,7 +1397,7 @@ div.right-best {
         padding: 20px 0;
     }
 
-    .navbar {
+    .navbar, .navbar-location {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1408,6 +1432,40 @@ div.right-best {
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
     }
+
+    iframe {
+        width: 100%;
+    }
+
+    .mapouter {
+        height: 450px;
+        width: 92%;
+    }
+
+    .gmap_canvas {
+        height: 450px;
+        width: 100%;
+    }
+
+    div.box-location {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .info h2 {
+        font-size: 25px;
+    }
+
+    .info h3 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .location .info {
+        text-align: left;
+        position: absolute;
+        bottom: 70px;
+    }
 }
 
 /* 
@@ -1416,7 +1474,7 @@ div.right-best {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-    div.seven, div.right-about, img.appear, div.text img {
+    div.seven, div.right-about, img.appear, div.text img, .location img.content {
         display: none;
     }
 
@@ -1685,6 +1743,10 @@ div.right-best {
         padding-bottom: 5px;
     }
 
+    .navbar-location {
+        background-color: rgba(195, 219, 202, 1);
+    }
+
     .logo {
         margin-left: 0px;
         margin-top: 10px;
@@ -1692,6 +1754,76 @@ div.right-best {
 
     h1.fas {
         line-height: 45px;
+        font-size: 29px;
+    }
+
+    .mapouter {
+        height: 350px;
+        width: 92%;
+    }
+
+    .gmap_canvas {
+        height: 350px;
+        width: 100%;
+    }
+
+    .location .info {
+        text-align: center;
+        position: static;
+        width: 100%;
+        bottom: 80px;
+        padding: 20px;
+    }
+
+    div.box-location {
+        width: 93%;
+    }
+
+    .location .one {
+        width: 100%;
+        padding-top: 60%;
+        background-image: url('../IMG/location/DSC_0589.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .location .two {
+        width: 48%;
+        padding-top: 60%;
+        margin-right: 4%;
+        float: left;
+        background-image: url('../IMG/location/DSC_0559.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .location .three {
+        width: 48%;
+        padding-top: 60%;
+        float: left;
+        background-image: url('../IMG/location/DSC_0560.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    br.location {
+        display: none;
+    }
+
+    .info h2 {
+        font-size: 27px;
+    }
+
+    .info h3 {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
 
@@ -1701,11 +1833,11 @@ div.right-best {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    div.seven, div.right-about, img.appear, div.text img {
+    div.seven, div.right-about, img.appear, div.text img, .location img.content {
         display: none;
     }
 
-    h1.hide, img.hide, .hide h4 {
+    h1.hide, img.hide, .hide h4, .location h4.hide {
         display: block;
     }
 
@@ -2062,12 +2194,113 @@ div.right-best {
         padding-bottom: 5px;
     }
 
+    .navbar-location {
+        background-color: rgba(195, 219, 202, 1);
+    }
+
     .logo {
         margin-left: 0px;
         margin-top: 10px;
     }
 
     h1.fas {
-        line-height: 45px;
+        line-height: 40px;
+        font-size: 24px;
+    }
+
+    .mapouter {
+        height: 350px;
+        width: 92%;
+    }
+
+    .gmap_canvas {
+        height: 350px;
+        width: 100%;
+    }
+
+    .location .info {
+        text-align: center;
+        position: static;
+        width: 100%;
+        bottom: 80px;
+        padding: 20px;
+    }
+
+    div.box-location {
+        width: 100%;
+    }
+
+    .location .one {
+        width: 100%;
+        padding-top: 60%;
+        background-image: url('../IMG/location/DSC_0589.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .location .two {
+        width: 100%;
+        padding-top: 100%;
+        margin-right: 0%;
+        margin-bottom: 25px;
+        background-image: url('../IMG/location/DSC_0559.jpg');
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .location .three {
+        width: 100%;
+        padding-top: 110%;
+        background-image: url('../IMG/location/DSC_0560.jpg');
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    br.location {
+        display: none;
+    }
+
+    .info h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .info h3 {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .location h4.hide {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    h1.title {
+        font-size: 26px;
+    }
+
+    img.black {
+        height: 70px;
+        margin: 120px auto 0;
+    }
+
+    footer h1 {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0px;
+    }
+
+    .navbar-location, .navbar-menu, .navbar-contact, .navbar-story {
+        padding-bottom: 0px;
     }
 }

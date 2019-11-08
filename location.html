@@ -2,33 +2,54 @@
 <html>
     <head>
         <title>Bella Marie | Menu</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="others location">
-            <nav>
-                <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="story.html">our story</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="location.html">location</a></li>
-                    <li id="no-border"><a href="contact.html">contact us</a></li>
+        <header class="location others">
+            <nav class="navbar-location" id="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <h1 class="fas fa-bars">&#9776;</h1>
+                </span>
+                <a href="#" class="logo"><img src="IMG/logo-white.png"></a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="home.html" class="nav-links">home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html" class="nav-links">menu</a>
+                    </li>
+                    <li>
+                        <a href="story.html" class="nav-links">our story</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links">location</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-links">contact us</a>
+                    </li>
                 </ul>
-                <img src="IMG/logo-black.png" class="black">
             </nav>
         </header>
         <main class="location">
+            <img src="IMG/logo-black.png" class="black">
             <h1 class="title">location</h1>
             <div class="box-location">
-                <img src="IMG/location/Untitled-1.png">
+                <img class="content" src="IMG/location/Untitled-1.png">
+                <div class="one"></div>
                 <div class="info">
                     <h2>aurora hill</h2>
                     <h3>#25 North Central, Aurora Hill, Baguio City</h3>
-                    <h3>monday to sunday: 9am ‘til 9pm</h3><br>
+                    <h3>monday to sunday: 9am ‘til 9pm</h3><br class="location">
                     <h3>For inquiry, call or text: (0917) 798 2409</h3>
                 </div>
+                <div class="two"></div>
+                <h4 class="hide">~ feel free to read our books! ~</h4>
+                <div class="three"></div>
             </div>
+            <div class="blank"></div>
         </main>
 
         <section class="map">
@@ -42,17 +63,27 @@
         </section>
 
         <footer>
-            <img src="IMG/logo-black.png">
-            <nav>
-                <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="story.html">our story</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="location.html">location</a></li>
-                    <li id="no-border"><a href="contact.html">contact us</a></li>
-                </ul>
-            </nav>
-            <h1>Copyright © 2019 Bella Marie Cafe. All Rights Reserved.</h1>
+            <h1>Copyright © 2019 Bella Marie Cafe | All Rights Reserved.</h1>
         </footer>
+        
+        <script>
+
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            navBarToggle.addEventListener('click', function () {
+                mainNav.classList.toggle('active2');
+            });
+
+            window.onscroll = () => {
+                const nav = document.querySelector('#navbar');
+                if(this.scrollY <= 10) {
+                    nav.className = 'navbar-location';
+                } else {
+                    nav.className = 'navbar-location scroll-location';
+                }
+            };
+
+        </script>
     </body>
 </html>
