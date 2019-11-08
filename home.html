@@ -9,11 +9,11 @@
     <header class="home">
         <nav>
             <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="story.html">our story</a></li>
-                <li><a href="menu.html">menu</a></li>
-                <li><a href="location.html">location</a></li>
-                <li id="no-border"><a href="contact.html">contact us</a></li>
+                <li class="active"><a href="home.html">{ home }</a></li>
+                <li class="inactive"><a href="story.html"><span>{</span> our story <span>}</span></a></li>
+                <li class="inactive"><a href="menu.html"><span>{</span> menu <span>}</span></a></li>
+                <li class="inactive"><a href="location.html"><span>{</span> location <span>}</span></a></li>
+                <li class="inactive" id="no-border"><a href="contact.html"><span>{</span> contact us <span>}</span></a></li>
             </ul>
         </nav>
         <img src="IMG/logo-white.png" class="white">
@@ -33,7 +33,10 @@
                         <h2>sandwiches</h2>
                     </div>
                     <div class="container three">
-                        <h2>all-day breakfast</h2>
+                        <h2>rice meals</h2>
+                    </div>
+                    <div class="hide">
+                        <h4>from breakfast to dinner,<br>coffees to smoothies,<br>meet your new go-to spot</h4>
                     </div>
                     <div class="seven">
                         <div class="menu-button">
@@ -54,7 +57,7 @@
                         <h2>snacks</h2>
                     </div>
                     <div class="container six">
-                        <h2>rice meals</h2>
+                        <h2>all-day breakfast</h2>
                     </div>
                     <div class="eight">
                         <div class="menu-button">
@@ -143,12 +146,11 @@
         <section id="about">
             <div class="container-about">
                 <div class="left-about">
-                    <img src="IMG/home/36689072_265774287517985_4707979945412919296_n.jpg">
+                    <img class="hide" src="IMG/home/59345490_115298813012889_3961892422611350259_n - Copy.jpg">
+                    <img class="appear" src="IMG/home/36689072_265774287517985_4707979945412919296_n.jpg">
                     <h1>our story</h1>
                     <h2>We wanted to bring the tropical vacation lifestyle into something experiential for everyone to enjoy. Bella Marie Cafe is a fusion of the things we like to see, eat, and drink. All in one space.</h2>
-
                     <a href="story.html"><div class="about-button">read more</div></a>
-
                 </div>
                 <div class="right-about">
                     <img src="IMG/home/menu-about.png" class="leaf-about">
@@ -201,7 +203,7 @@
                         <img src="IMG/home/quote2.png">
                     </div>
                     <div class="third-three">
-                        <h3>Majoy Estigoy</h3>
+                        <h3>- Majoy Estigoy -</h3>
                     </div>
                 </div>
                 <div class="mySlides2 fade">
@@ -209,13 +211,13 @@
                         <img src="IMG/home/quote1.png">
                     </div>
                     <div class="third-two">
-                        <h2>The barista has an excellent skills on hot and cold beverages! <br>I do believe that his cafe will be very successful in the coming months due to its booming popularity.</h2>
+                        <h2>The barista has an excellent skills on hot and cold beverages! I do believe that his cafe will be very successful in the coming months due to its booming popularity.</h2>
                     </div>
                     <div class="third-one down">
                         <img src="IMG/home/quote2.png">
                     </div>
                     <div class="third-three">
-                        <h3>Yessie Capiz</h3>
+                        <h3>- Yessie Capiz -</h3>
                     </div>
                 </div>
                 <div class="mySlides2 fade">
@@ -223,13 +225,13 @@
                         <img src="IMG/home/quote1.png">
                     </div>
                     <div class="third-two">
-                        <h2>This place is undoubtedly very nice. I really loved the interiors! <br>The food tasted favorable and the staff was also <br>really nice and helpful.</h2>
+                        <h2>This place is undoubtedly very nice. I really loved the interiors! The food tasted favorable and the staff was also really nice and helpful.</h2>
                     </div>
                     <div class="third-one down">
                         <img src="IMG/home/quote2.png">
                     </div>
                     <div class="third-three">
-                        <h3>Julienne Martin</h3>
+                        <h3>- Julienne Martin - </h3>
                     </div>
                 </div>
                 <div class="mySlides2 fade">
@@ -243,7 +245,7 @@
                         <img src="IMG/home/quote2.png">
                     </div>
                     <div class="third-three">
-                        <h3>TastyTravelDiaries.wordpress.com</h3>
+                        <h3>- TastyTravelDiaries.wordpress.com -</h3>
                     </div>
                 </div>
                 <div class="mySlides2 fade">
@@ -251,13 +253,13 @@
                         <img src="IMG/home/quote1.png">
                     </div>
                     <div class="third-two">
-                        <h2>If you need a place to chill and relax with your friends <br>with good music, then this is your place. A glass of their iced latte will fill your day!</h2>
+                        <h2>If you need a place to chill and relax with your friends with good music, then this is your place. A glass of their iced latte will fill your day!</h2>
                     </div>
                     <div class="third-one down">
                         <img src="IMG/home/quote2.png">
                     </div>
                     <div class="third-three">
-                        <h3>BaguioTravels.com</h3>
+                        <h3>- BaguioTravels.com -</h3>
                     </div>
                 </div>
                 <br>
@@ -277,7 +279,7 @@
         <img src="IMG/logo-black.png">
         <nav>
             <ul>
-                <li><a href="home.html">home</a></li>
+                <li><a href="home.html">[ home ]</a></li>
                 <li><a href="story.html">our story</a></li>
                 <li><a href="menu.html">menu</a></li>
                 <li><a href="location.html">location</a></li>
@@ -340,7 +342,7 @@
             }
             slides2[slideIndex2-1].style.display = "block";  
             dots2[slideIndex2-1].className += " active";
-            setTimeout(showSlides2, 10000); // Change image every 2 seconds
+            setTimeout(showSlides2, 7000); // Change image every 2 seconds
         }
 </script>
 </body>
