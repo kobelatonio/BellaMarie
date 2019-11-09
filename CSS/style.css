@@ -43,7 +43,7 @@ header.location {
 
 /***** NAVIGATION BAR *****/
 
-.navbar, .navbar-location {
+.navbar, .navbar-location, .navbar-menu {
     font-size: 18px;
     padding-bottom: 10px;
     z-index: 100;
@@ -57,6 +57,10 @@ header.location {
 }
 
 .navbar-location {
+    background-color: rgba(195, 219, 202, 0);
+}
+
+.navbar-menu {
     background-color: rgba(195, 219, 202, 0);
 }
 
@@ -665,6 +669,16 @@ div.right-about {
     bottom: 80px;
 }
 
+img.medium {
+    width: 100%;
+    display: none;
+}
+
+img.small {
+    width: 100%;
+    display: none;
+}
+
 /***** TEXTS *****/
 
 #menu h2 {
@@ -1150,7 +1164,7 @@ div.right-best {
         background-size: 1000px;
     }
 
-    .navbar, .navbar-location {
+    .navbar, .navbar-location, .navbar-menu {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1193,7 +1207,7 @@ div.right-best {
 */
 
 @media (min-width: 1025px) and (max-width: 1380px) {
-    .navbar, .navbar-location {
+    .navbar, .navbar-location, .navbar-menu {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1397,7 +1411,7 @@ div.right-best {
         padding: 20px 0;
     }
 
-    .navbar, .navbar-location {
+    .navbar, .navbar-location, .navbar-menu {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1465,6 +1479,18 @@ div.right-best {
         text-align: left;
         position: absolute;
         bottom: 70px;
+    }
+
+    img.large {
+        display: none;
+    }
+
+    img.medium {
+        display: block;
+    }
+
+    div.box-menu {
+        width: 92%;
     }
 }
 
@@ -1747,6 +1773,10 @@ div.right-best {
         background-color: rgba(195, 219, 202, 1);
     }
 
+    .navbar-menu {
+        background-color: rgba(180, 191, 161, 1);
+    }
+
     .logo {
         margin-left: 0px;
         margin-top: 10px;
@@ -1823,6 +1853,18 @@ div.right-best {
     }
 
     iframe {
+        width: 100%;
+    }
+
+    img.large {
+        display: none;
+    }
+
+    img.medium {
+        display: block;
+    }
+
+    div.box-menu {
         width: 100%;
     }
 }
@@ -2198,6 +2240,10 @@ div.right-best {
         background-color: rgba(195, 219, 202, 1);
     }
 
+    .navbar-menu {
+        background-color: rgba(180, 191, 161, 1);
+    }
+
     .logo {
         margin-left: 0px;
         margin-top: 10px;
@@ -2302,5 +2348,17 @@ div.right-best {
 
     .navbar-location, .navbar-menu, .navbar-contact, .navbar-story {
         padding-bottom: 0px;
+    }
+
+    img.large {
+        display: none;
+    }
+
+    img.small {
+        display: block;
+    }
+
+    div.box-menu {
+        width: 100%;
     }
 }
