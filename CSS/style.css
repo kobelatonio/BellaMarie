@@ -43,7 +43,7 @@ header.location {
 
 /***** NAVIGATION BAR *****/
 
-.navbar, .navbar-location, .navbar-menu {
+.navbar, .navbar-location, .navbar-menu, .navbar-story, .navbar-contact {
     font-size: 18px;
     padding-bottom: 10px;
     z-index: 100;
@@ -63,6 +63,15 @@ header.location {
 .navbar-menu {
     background-color: rgba(195, 219, 202, 0);
 }
+
+.navbar-story {
+    background-color: rgba(195, 219, 202, 0);
+}
+
+.navbar-contact {
+    background-color: rgba(195, 219, 202, 0);
+}
+
 
 .main-nav {
     list-style-type: none;
@@ -124,6 +133,10 @@ nav.scroll-story {
 
 nav.scroll-location {
     background-color: rgba(195, 219, 202, 1);
+}
+
+nav.scroll-contact {
+    background-color: rgba(197, 188, 207, 1);
 }
 
 h1.fas {
@@ -285,6 +298,11 @@ div.box, div.box-contact  {
     margin: 0 auto;
 }
 
+div.box-contact  {
+    width: 90%;
+    margin-top: 30px;
+}
+
 div.box-menu{
     width: 800px;
     margin: 0 auto;
@@ -360,24 +378,30 @@ main.story {
 
 main.contact {
     background: #e0d6ea;
-    height: 700px;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 main.location {
     background: #d8e3db;
     text-align: center;
     position: relative;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 main.contact div.left {
-    width: 35%;
+    width: 30%;
+    height: 470px;
     float: left;
     margin-right: 5%;
+    background-image: url('../IMG/contact/dscf7108.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main.contact div.right {
-    width: 60%;
+    width: 65%;
     float: left;
     text-align: center;
     position: relative;
@@ -951,7 +975,7 @@ main.contact input[type=submit] {
     width: 100%;
     padding-left: 34%;
     padding: 0 auto;
-    margin: 30px 0 20px;
+    margin: 0px 0 20px;
     text-align: center;
 }
 
@@ -1164,7 +1188,7 @@ div.right-best {
         background-size: 1000px;
     }
 
-    .navbar, .navbar-location, .navbar-menu {
+    .navbar, .navbar-location, .navbar-menu, .navbar-story, .navbar-contact {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1198,6 +1222,14 @@ div.right-best {
     .logo:hover,
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
+    }
+
+    main.story img.appear {
+        display: block;
+    }
+
+    main.story img.hide {
+        display: hide;
     }
 }
 
@@ -1207,7 +1239,7 @@ div.right-best {
 */
 
 @media (min-width: 1025px) and (max-width: 1380px) {
-    .navbar, .navbar-location, .navbar-menu {
+    .navbar, .navbar-location, .navbar-menu, .navbar-story, .navbar-contact {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1243,8 +1275,14 @@ div.right-best {
         color: rgba(255, 255, 255, 1);
     }
 
+    main.story img.appear {
+        display: block;
+    }
 
-}
+    main.story img.hide {
+        display: hide;
+    }
+}   
 
 /* 
 ##Device = Tablets, Ipads
@@ -1411,7 +1449,7 @@ div.right-best {
         padding: 20px 0;
     }
 
-    .navbar, .navbar-location, .navbar-menu {
+    .navbar, .navbar-location, .navbar-menu, .navbar-story, .navbar-contact {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -1491,6 +1529,42 @@ div.right-best {
 
     div.box-menu {
         width: 92%;
+    }
+
+    div.box-story {
+        width: 90%;
+    }
+
+    .box-story h2 {
+        font-size: 18px;
+    }
+
+    main.story img.appear {
+        display: block;
+    }
+
+    main.story img.hide {
+        display: hide;
+    }
+
+    main.contact p {
+        font-size: 18px;
+    }
+
+    main.contact img.leaf {
+        width: 90px;
+        top: 40px;
+    }
+
+    main.contact h2 {
+        font-size: 15px;
+        font-style: italic;
+        margin-top: 30px;
+        letter-spacing: 1px;
+    }
+
+    legend {
+        font-size: 26px;
     }
 }
 
@@ -1777,6 +1851,14 @@ div.right-best {
         background-color: rgba(180, 191, 161, 1);
     }
 
+    .navbar-story {
+        background-color: rgba(222, 202, 151, 1);
+    }
+
+    .navbar-contact {
+        background-color: rgba(197, 188, 207, 1);
+    }
+
     .logo {
         margin-left: 0px;
         margin-top: 10px;
@@ -1866,6 +1948,74 @@ div.right-best {
 
     div.box-menu {
         width: 100%;
+    }
+
+    div.box-story {
+        width: 100%;
+    }
+
+    .box-story h2 {
+        padding: 40px 60px;
+        font-size: 16px;
+        line-height: 33px;
+    }
+
+    main.story {
+        padding-bottom: 30px;
+    }
+
+    main.story img.appear {
+        display: none;
+    }
+
+    main.story img.hide {
+        display: block;
+    }
+
+    main.contact div.left {
+        display: none;
+    }
+
+    main.contact div.right {
+        width: 100%;
+        float: none;
+    }
+
+    .legend {
+        font-size: 28px;
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    div.contact-hide {
+        display: block;
+        width: 100%;
+        height: 400px;
+        background-image: url('../IMG/contact/dscf7108.jpg');
+        background-position: center;
+        background-size: 300px;
+        background-repeat: no-repeat;
+    }
+
+    main.contact h2 {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    main.contact img.leaf {
+        width: 70px;
+        right: -15px;
+        top: 45px;
+    }
+
+    main.contact p {
+        width: 25%;
+        font-size: 17px;
+    }
+
+    main.contact input[type=text], main.contact input[type=email], main.contact input[type=tel], textarea {
+        width: 73%;
     }
 }
 
@@ -2244,6 +2394,14 @@ div.right-best {
         background-color: rgba(180, 191, 161, 1);
     }
 
+    .navbar-story {
+        background-color: rgba(222, 202, 151, 1);
+    }
+
+    .navbar-contact {
+        background-color: rgba(197, 188, 207, 1);
+    }
+
     .logo {
         margin-left: 0px;
         margin-top: 10px;
@@ -2346,7 +2504,7 @@ div.right-best {
         letter-spacing: 0px;
     }
 
-    .navbar-location, .navbar-menu, .navbar-contact, .navbar-story {
+    .navbar-location, .navbar-menu, .navbar-contact, .navbar-story, .navbar-contact {
         padding-bottom: 0px;
     }
 
@@ -2360,5 +2518,91 @@ div.right-best {
 
     div.box-menu {
         width: 100%;
+    }
+
+    div.box-story {
+        width: 100%;
+    }
+
+    .box-story h2 {
+        padding: 20px 30px;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    main.story {
+        padding-bottom: 20px;
+    }
+
+    main.story img.appear {
+        display: none;
+    }
+
+    main.story img.hide {
+        display: block;
+    }
+
+    main.contact {
+        padding-bottom: 0px;
+    }
+
+    div.box-contact {
+        width: 100%;
+    }
+
+    main.contact div.left {
+        display: none;
+    }
+
+    main.contact div.right {
+        width: 100%;
+        float: none;
+    }
+
+    .legend {
+        font-size: 28px;
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    div.contact-hide {
+        display: block;
+        width: 100%;
+        height: 400px;
+        background-image: url('../IMG/contact/dscf7108.jpg');
+        background-position: center;
+        background-size: 320px;
+        background-repeat: no-repeat;
+    }
+
+    main.contact h2 {
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    main.contact img.leaf {
+        width: 70px;
+        right: 5px;
+        top: 70px;
+    }
+
+    main.contact p {
+        width: 90%;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    main.contact input[type=text], main.contact input[type=email], main.contact input[type=tel], textarea {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    main.contact .submit {
+        margin-right: 25px;
+        margin-bottom: 10px;
     }
 }

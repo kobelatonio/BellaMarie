@@ -2,27 +2,41 @@
 <html>
     <head>
         <title>Bella Marie | Menu</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="others contact">
-            <nav>
-                <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="story.html">our story</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="location.html">location</a></li>
-                    <li id="no-border"><a href="contact.html">contact us</a></li>
+        <header class="contact others">
+            <nav class="navbar-contact" id="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <h1 class="fas fa-bars">&#9776;</h1>
+                </span>
+                <a href="#" class="logo"><img src="IMG/logo-white.png"></a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="home.html" class="nav-links">home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links">menu</a>
+                    </li>
+                    <li>
+                        <a href="story.html" class="nav-links">our story</a>
+                    </li>
+                    <li>
+                        <a href="location.html" class="nav-links">location</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-links">contact us</a>
+                    </li>
                 </ul>
-                <img src="IMG/logo-black.png" class="black">
             </nav>
         </header>
         <main class="contact">
+            <img src="IMG/logo-black.png" class="black">
             <div class="box-contact"> 
-                <div class="container left">
-                    <img src="IMG/contact/dscf7108.jpg">
-                </div>
+                <div class="container left"></div>
                 <div class="container right">
                     <form action="/action_page.php">
                         <fieldset>
@@ -33,10 +47,10 @@
                             <input type="text" name="name" placeholder="enter your name" required autofocus>
                             <p>Email*</p>
                             <input type="email" name="email" placeholder="enter your email" required>
-                            <p>Phone Number*</p>
+                            <p>Phone No.*</p>
                             <input type="tel" name="number" placeholder="enter your phone number" required>
                             <p>Comments*</p>
-                            <textarea name="comment" rows="5" cols="100" required placeholder="enter your message"></textarea>
+                            <textarea name="comment" rows="4" cols="100" required placeholder="enter your message"></textarea>
                             <br><br>
                             <div class="submit">
                                 <input name="submit" type="submit" value="submit">
@@ -46,21 +60,31 @@
                     <h2>Send us a note—our team will get back to you soon!<br>For inquiry, call or text: (0917) 798 2409</h2>
                     <img src="IMG/contact/leaf.png" class="leaf">
                 </div>
+                <div class="contact-hide"></div>
             </div>
+            <div class="blank"></div>
         </main>
-        <div class="blank"></div>
         <footer>
-            <img src="IMG/logo-black.png">
-            <nav>
-                <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="story.html">our story</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="location.html">location</a></li>
-                    <li id="no-border"><a href="contact.html">contact us</a></li>
-                </ul>
-            </nav>
-            <h1>Copyright © 2019 Bella Marie Cafe. All Rights Reserved.</h1>
+            <h1>Copyright © 2019 Bella Marie Cafe | All Rights Reserved.</h1>
         </footer>
+        <script>
+
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            navBarToggle.addEventListener('click', function () {
+                mainNav.classList.toggle('active2');
+            });
+
+            window.onscroll = () => {
+                const nav = document.querySelector('#navbar');
+                if(this.scrollY <= 10) {
+                    nav.className = 'navbar-contact';
+                } else {
+                    nav.className = 'navbar-contact scroll-contact';
+                }
+            };
+
+        </script>
     </body>
 </html>

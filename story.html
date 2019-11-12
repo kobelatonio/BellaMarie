@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="story others">
-            <nav class="navbar" id="navbar">
+            <nav class="navbar-story" id="navbar">
                 <span class="navbar-toggle" id="js-navbar-toggle">
                     <h1 class="fas fa-bars">&#9776;</h1>
                 </span>
@@ -37,7 +37,8 @@
             <img src="IMG/logo-black.png" class="black">
             <h1 class="title">our story</h1>
             <div class="box-story">
-                <img src="IMG/story/56942686_130123431486571_3823025257194456952_n.jpg">
+                <img class="hide" src="IMG/story/Untitled-1.jpg">
+                <img class="appear" src="IMG/story/56942686_130123431486571_3823025257194456952_n.jpg">
                 <h2><span>June 15, 2018</span> - Bella Marie Cafe opened with an endeavor to recreate its name to beautiful and liberating products and services. Named after its owner, “Bella” means beautiful and “Marie”, liberty. As the name of the cafe implies, Bella Marie gives the ultimate liberating experience for a perfect hangout of all customers for all ages. The cafe welcomes you with it refreshing and relazing atmosphere with a tropical Indonesian-inspired design.</h2>
                 <img src="IMG/story/57589909_905359529795846_6099383530232574372_n.jpg">
                 <h2>The cafe offers <span>Filipino-American cuisine</span>, all freshly prepared ingredients from in and out of the country, with best-selling products such as Oreo Cheesecake. The menu prepared by our chef is a collection of our favorite comfort food with a modern twist. We designed it to be your new go-to spot, from breakfast to dinner, and coffees to smoothies.</h2>
@@ -60,9 +61,9 @@
             window.onscroll = () => {
                 const nav = document.querySelector('#navbar');
                 if(this.scrollY <= 10) {
-                    nav.className = 'navbar';
+                    nav.className = 'navbar-story';
                 } else {
-                    nav.className = 'navbar scroll-story';
+                    nav.className = 'navbar-story scroll-story';
                 }
             };
 
