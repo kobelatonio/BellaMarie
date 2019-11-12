@@ -83,6 +83,39 @@ header.location {
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 15px;
+    transition: all 0.4s ease;
+}
+
+a.active {
+    text-decoration: none;
+    color: rgba(196, 92, 182, 1);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all 0.4s ease;
+    background: none;
+}
+
+a.active-others {
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: all 0.4s ease;
+    background: none;
+}
+
+a.main:hover {
+    color: rgba(196, 92, 182, 1);
+}
+
+a.others:hover {
+    color: rgba(51, 51, 51, 1);
+}
+
+a.active:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .main-nav li {
@@ -386,12 +419,12 @@ main.location {
     background: #d8e3db;
     text-align: center;
     position: relative;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 main.contact div.left {
     width: 30%;
-    height: 470px;
+    height: 485px;
     float: left;
     margin-right: 5%;
     background-image: url('../IMG/contact/dscf7108.jpg');
@@ -593,7 +626,7 @@ div.right-about {
 
 #menu div.container {
     background-position: center;
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
